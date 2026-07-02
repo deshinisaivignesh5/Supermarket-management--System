@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MarketHub — Supermarket Management</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar">
+      <div class="brand">🛒 MarketHub</div>
+      <nav>
+        <button class="nav-btn active" data-view="dashboard">Dashboard</button>
+        <button class="nav-btn" data-view="pos">Point of Sale</button>
+        <button class="nav-btn" data-view="inventory">Inventory</button>
+        <button class="nav-btn" data-view="sales">Sales History</button>
+        <button class="nav-btn" data-view="settings">Categories & Suppliers</button>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <header class="topbar">
+        <h1 id="view-title">Dashboard</h1>
+        <div class="date" id="current-date"></div>
+      </header>
+
+      <section id="view-dashboard" class="view"></section>
+      <section id="view-pos" class="view" style="display:none"></section>
+      <section id="view-inventory" class="view" style="display:none"></section>
+      <section id="view-sales" class="view" style="display:none"></section>
+      <section id="view-settings" class="view" style="display:none"></section>
+    </main>
+  </div>
+
+  <div id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
